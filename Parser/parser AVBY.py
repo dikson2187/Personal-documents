@@ -41,7 +41,7 @@ def get_content(html):
 def save_file(items, path):
     with open(path, 'w', newline='', encoding='utf-8-sig') as file:
         writer = csv.writer(file, delimiter=';')
-        writer.writerow(['Марка','Город!','Ссылка','Цена в рубля!','Цена в долорах'])
+        writer.writerow(['Марка','Город!','Ссылка','Цена в рубля!','Цена в долорах!'])
         for item in items:
             writer.writerow([item['title'], item['city'], item['link'], item['many_by'], item['many_usd']])
 
